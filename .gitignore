@@ -15,3 +15,9 @@ desktop.ini
 
 # Temporales
 *.log
+
+# Claves de firma (NUNCA subir)
+.signing/
+
+# Binarios compilados
+builds/
