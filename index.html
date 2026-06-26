@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juegos — Game Studio</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b0f1e;color:#eaf2ff;
+    min-height:100vh;padding:48px 20px;line-height:1.5}
+  .wrap{max-width:760px;margin:0 auto}
+  h1{font-size:40px;font-weight:900;letter-spacing:-1px;margin-bottom:6px}
+  .sub{opacity:.6;margin-bottom:36px}
+  .card{display:flex;align-items:center;gap:18px;background:#161a30;border-radius:18px;padding:18px 20px;margin-bottom:16px;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.06);text-decoration:none;color:inherit;transition:transform .1s}
+  .card:active{transform:scale(.99)}
+  .ico{width:64px;height:64px;border-radius:16px;flex:0 0 auto;background-size:cover}
+  .meta{flex:1}
+  .name{font-size:20px;font-weight:800}
+  .desc{opacity:.65;font-size:14px}
+  .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+  .links a{font-size:13px;font-weight:700;text-decoration:none;padding:6px 12px;border-radius:8px}
+  .play{background:#00e5ff;color:#04121f}
+  .priv{background:rgba(255,255,255,.1);color:#eaf2ff}
+  footer{opacity:.45;font-size:13px;margin-top:30px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🎮 Game Studio</h1>
+  <div class="sub">Tres juegos hiper-casual. Juega online o consulta sus políticas de privacidad.</div>
+
+  <div class="card">
+    <div class="ico" style="background-image:url('neon-zigzag/assets/icon-1024.png')"></div>
+    <div class="meta">
+      <div class="name">Neon Zigzag</div>
+      <div class="desc">Un toque, sigue la pista de neón y no te caigas.</div>
+      <div class="links">
+        <a class="play" href="neon-zigzag/www/index.html">▶ Jugar</a>
+        <a class="priv" href="neon-zigzag/store/privacy-policy.html">Privacidad</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ico" style="background-image:url('stack-tower/assets/icon-1024.png')"></div>
+    <div class="meta">
+      <div class="name">Stack Tower</div>
+      <div class="desc">Apila bloques con timing perfecto y llega alto.</div>
+      <div class="links">
+        <a class="play" href="stack-tower/www/index.html">▶ Jugar</a>
+        <a class="priv" href="stack-tower/store/privacy-policy.html">Privacidad</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ico" style="background-image:url('merge-2048/assets/icon-1024.png')"></div>
+    <div class="meta">
+      <div class="name">Merge 2048</div>
+      <div class="desc">Desliza, une números iguales y llega a 2048.</div>
+      <div class="links">
+        <a class="play" href="merge-2048/www/index.html">▶ Jugar</a>
+        <a class="priv" href="merge-2048/store/privacy-policy.html">Privacidad</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2026 · martinuzal</footer>
+</div>
+</body>
+</html>
