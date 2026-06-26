@@ -29,6 +29,13 @@ Cada juego necesita en AdMob:
 
 ---
 
+## ✅ Estado: IDs ya configurados en el código
+
+Los 18 IDs reales (Android + iOS de los 3 juegos, ID de editor
+`ca-app-pub-4525467942010959`) ya están cableados en cada `www/ads.js`
+(`CONFIG.appId` + `CONFIG.prod`) y en cada `capacitor.config.json`, con
+`useTestAds: false`. La tabla de abajo queda como referencia.
+
 ## Tabla para rellenar
 
 Anota aquí tus IDs reales y luego cópialos al código:

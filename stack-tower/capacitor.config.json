@@ -6,8 +6,8 @@
   "plugins": {
     "AdMob": {
       "appId": {
-        "android": "ca-app-pub-3940256099942544~3347511713",
-        "ios": "ca-app-pub-3940256099942544~1458002511"
+        "android": "ca-app-pub-4525467942010959~6826392676",
+        "ios": "ca-app-pub-4525467942010959~2601609575"
       }
     },
     "SplashScreen": { "launchShowDuration": 1200, "backgroundColor": "#1a1030", "showSpinner": false }

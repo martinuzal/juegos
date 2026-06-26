@@ -6,8 +6,8 @@
   "plugins": {
     "AdMob": {
       "appId": {
-        "android": "ca-app-pub-3940256099942544~3347511713",
-        "ios": "ca-app-pub-3940256099942544~1458002511"
+        "android": "ca-app-pub-4525467942010959~5889705203",
+        "ios": "ca-app-pub-4525467942010959~3272114873"
       }
     },
     "SplashScreen": {

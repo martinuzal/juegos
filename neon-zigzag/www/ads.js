@@ -16,11 +16,11 @@
 
   // ---- CONFIG: replace with your real AdMob ids before release ----
   var CONFIG = {
-    useTestAds: true, // <-- set to false for production
+    useTestAds: false, // <-- set to false for production
     appId: {
       // From AdMob console. Also goes in AndroidManifest / Info.plist.
-      android: 'ca-app-pub-3940256099942544~3347511713',
-      ios:     'ca-app-pub-3940256099942544~1458002511'
+      android: 'ca-app-pub-4525467942010959~5889705203',
+      ios:     'ca-app-pub-4525467942010959~3272114873'
     },
     // Google's official TEST ad unit ids (safe to ship while testing):
     test: {
@@ -31,10 +31,10 @@
     },
     // YOUR real ad unit ids (used when useTestAds === false):
     prod: {
-      interstitial: { android: 'ca-app-pub-XXXXXXXXXXXXXXXX/XXXXXXXXXX',
-                      ios:     'ca-app-pub-XXXXXXXXXXXXXXXX/XXXXXXXXXX' },
-      rewarded:     { android: 'ca-app-pub-XXXXXXXXXXXXXXXX/XXXXXXXXXX',
-                      ios:     'ca-app-pub-XXXXXXXXXXXXXXXX/XXXXXXXXXX' }
+      interstitial: { android: 'ca-app-pub-4525467942010959/9013572313',
+                      ios:     'ca-app-pub-4525467942010959/7700490641' },
+      rewarded:     { android: 'ca-app-pub-4525467942010959/7087649496',
+                      ios:     'ca-app-pub-4525467942010959/4461486150' }
     }
   };
 
