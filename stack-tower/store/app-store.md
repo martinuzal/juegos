@@ -121,5 +121,5 @@ Initial release! Stack, chase the perfect block and beat your height record. Tha
 | Categoría secundaria | Juegos → Casual |
 | Clasificación por edad | 4+ |
 | Precio | Gratis |
-| Política de privacidad | (URL donde subas privacy-policy.html) |
+| Política de privacidad | https://martinuzal.github.io/juegos/privacy-policy.html |
 | Copyright | © 2026 (tu nombre / estudio) |

@@ -93,5 +93,5 @@ Will you reach 2048? Download and prove it.
 | Compras en la app | No |
 | Precio | Gratis |
 | Email de contacto | martin.uzal@gmail.com |
-| Política de privacidad | (URL donde subas privacy-policy.html) |
+| Política de privacidad | https://martinuzal.github.io/juegos/privacy-policy.html |
 | Gráfico destacado | 1024×500 (texto: "MERGE 2048 — Swipe. Merge. Reach 2048.") |

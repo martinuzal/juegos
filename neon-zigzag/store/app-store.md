@@ -124,5 +124,5 @@ Initial release! Tap, turn and beat your high score in Neon Zigzag. Thanks for p
 | Precio | Gratis |
 | URL de soporte | (tu web o un mailto:martin.uzal@gmail.com) |
 | URL de marketing | (opcional) |
-| Política de privacidad | (URL donde subas privacy-policy.html) |
+| Política de privacidad | https://martinuzal.github.io/juegos/privacy-policy.html |
 | Copyright | © 2026 (tu nombre / estudio) |

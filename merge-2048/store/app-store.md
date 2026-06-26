@@ -121,5 +121,5 @@ Initial release! Swipe, merge and reach 2048. Thanks for playing.
 | Categoría secundaria | Juegos → Mesa |
 | Clasificación por edad | 4+ |
 | Precio | Gratis |
-| Política de privacidad | (URL donde subas privacy-policy.html) |
+| Política de privacidad | https://martinuzal.github.io/juegos/privacy-policy.html |
 | Copyright | © 2026 (tu nombre / estudio) |

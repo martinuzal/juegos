@@ -94,5 +94,5 @@ Got the reflexes to go further? Download and find out.
 | Compras en la app | No |
 | Precio | Gratis |
 | Email de contacto | martin.uzal@gmail.com |
-| Política de privacidad | (URL donde subas privacy-policy.html) |
+| Política de privacidad | https://martinuzal.github.io/juegos/privacy-policy.html |
 | Gráfico destacado | 1024×500 (texto: "NEON ZIGZAG — One Tap. Don't Fall.") |
