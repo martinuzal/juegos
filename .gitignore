@@ -1,0 +1,17 @@
+# Dependencias
+node_modules/
+
+# Capacitor / nativo (se generan con `npx cap add`)
+*/android/
+*/ios/
+
+# Herramientas locales
+.gstack/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporales
+*.log

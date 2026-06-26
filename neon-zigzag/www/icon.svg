@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#161a3d"/>
+      <stop offset="1" stop-color="#0a0d22"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b3a8f"/>
+      <stop offset="1" stop-color="#1b2360"/>
+    </linearGradient>
+    <radialGradient id="ball" cx="0.38" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.4" stop-color="#6cf0ff"/>
+      <stop offset="1" stop-color="#0095c8"/>
+    </radialGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" rx="220" fill="url(#bg)"/>
+
+  <!-- zigzag diamond path -->
+  <g filter="url(#glow)" stroke="rgba(120,170,255,0.5)" stroke-width="6">
+    <g fill="url(#tile)">
+      <polygon points="512,760 632,640 512,520 392,640"/>
+      <polygon points="392,640 512,520 392,400 272,520"/>
+      <polygon points="632,520 752,400 632,280 512,400"/>
+      <polygon points="512,400 632,280 512,160 392,280"/>
+    </g>
+  </g>
+
+  <!-- ball -->
+  <circle cx="512" cy="660" r="64" fill="url(#ball)" filter="url(#glow)"/>
+</svg>

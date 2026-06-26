@@ -1,0 +1,26 @@
+{
+  "appId": "com.neonzigzag.game",
+  "appName": "Neon Zigzag",
+  "webDir": "www",
+  "backgroundColor": "#0b0f2a",
+  "plugins": {
+    "AdMob": {
+      "appId": {
+        "android": "ca-app-pub-3940256099942544~3347511713",
+        "ios": "ca-app-pub-3940256099942544~1458002511"
+      }
+    },
+    "SplashScreen": {
+      "launchShowDuration": 1200,
+      "backgroundColor": "#0b0f2a",
+      "showSpinner": false
+    }
+  },
+  "android": {
+    "backgroundColor": "#0b0f2a"
+  },
+  "ios": {
+    "backgroundColor": "#0b0f2a",
+    "contentInset": "always"
+  }
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a1748"/>
+      <stop offset="1" stop-color="#150c28"/>
+    </linearGradient>
+    <linearGradient id="b1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb06a"/><stop offset="1" stop-color="#ff8a3d"/></linearGradient>
+    <linearGradient id="b2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7ec0"/><stop offset="1" stop-color="#ff3da0"/></linearGradient>
+    <linearGradient id="b3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd36a"/><stop offset="1" stop-color="#ffb01f"/></linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="14" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" rx="220" fill="url(#bg)"/>
+  <g filter="url(#glow)">
+    <rect x="300" y="320" width="430" height="110" rx="24" fill="url(#b3)"/>
+    <rect x="250" y="450" width="470" height="110" rx="24" fill="url(#b2)"/>
+    <rect x="320" y="580" width="400" height="110" rx="24" fill="url(#b1)"/>
+  </g>
+</svg>

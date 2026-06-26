@@ -1,0 +1,17 @@
+{
+  "appId": "com.stacktower.game",
+  "appName": "Stack Tower",
+  "webDir": "www",
+  "backgroundColor": "#1a1030",
+  "plugins": {
+    "AdMob": {
+      "appId": {
+        "android": "ca-app-pub-3940256099942544~3347511713",
+        "ios": "ca-app-pub-3940256099942544~1458002511"
+      }
+    },
+    "SplashScreen": { "launchShowDuration": 1200, "backgroundColor": "#1a1030", "showSpinner": false }
+  },
+  "android": { "backgroundColor": "#1a1030" },
+  "ios": { "backgroundColor": "#1a1030", "contentInset": "always" }
+}
