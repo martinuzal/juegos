@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0c1e"/>
+      <stop offset="1" stop-color="#03040a"/>
+    </linearGradient>
+    <radialGradient id="planet" cx="0.4" cy="0.38" r="0.7">
+      <stop offset="0" stop-color="#8fd0ff"/>
+      <stop offset="0.5" stop-color="#3a7bff"/>
+      <stop offset="1" stop-color="#1b2f7a"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="rgba(92,240,255,0.5)"/>
+      <stop offset="1" stop-color="rgba(92,240,255,0)"/>
+    </radialGradient>
+    <filter id="f" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" rx="220" fill="url(#bg)"/>
+
+  <!-- stars -->
+  <g fill="#bcd8ff" opacity="0.8">
+    <circle cx="210" cy="250" r="4"/><circle cx="820" cy="300" r="5"/>
+    <circle cx="760" cy="720" r="4"/><circle cx="270" cy="760" r="5"/>
+    <circle cx="500" cy="180" r="3"/><circle cx="160" cy="540" r="3"/>
+  </g>
+
+  <!-- planet glow + body -->
+  <circle cx="512" cy="540" r="300" fill="url(#glow)"/>
+  <circle cx="512" cy="540" r="180" fill="url(#planet)"/>
+
+  <!-- orbit ring (tilted) -->
+  <g transform="rotate(-22 512 540)">
+    <ellipse cx="512" cy="540" rx="330" ry="330" fill="none" stroke="rgba(146,200,255,0.5)" stroke-width="6" stroke-dasharray="14 20"/>
+    <!-- ship on the ring -->
+    <g transform="translate(842 540) rotate(90)" filter="url(#f)">
+      <path d="M0,-34 L22,26 L0,12 L-22,26 Z" fill="#eaffff"/>
+    </g>
+  </g>
+</svg>

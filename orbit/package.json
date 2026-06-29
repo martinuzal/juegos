@@ -1,0 +1,19 @@
+{
+  "name": "orbit",
+  "version": "1.0.0",
+  "description": "Orbit — a gravity slingshot arcade game. Store-ready with AdMob.",
+  "private": true,
+  "scripts": {
+    "serve": "npx --yes serve www -l 5003",
+    "cap:sync": "npx cap sync",
+    "cap:android": "npx cap add android && npx cap sync android && npx cap open android",
+    "cap:ios": "npx cap add ios && npx cap sync ios && npx cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.0",
+    "@capacitor/core": "^6.1.0",
+    "@capacitor/ios": "^6.1.0",
+    "@capacitor-community/admob": "^6.0.0"
+  },
+  "devDependencies": { "@capacitor/cli": "^6.1.0" }
+}

@@ -1,0 +1,17 @@
+{
+  "appId": "com.solutica.orbit",
+  "appName": "Orbit",
+  "webDir": "www",
+  "backgroundColor": "#05060f",
+  "plugins": {
+    "AdMob": {
+      "appId": {
+        "android": "ca-app-pub-XXXXXXXXXXXXXXXX~XXXXXXXXXX",
+        "ios": "ca-app-pub-XXXXXXXXXXXXXXXX~XXXXXXXXXX"
+      }
+    },
+    "SplashScreen": { "launchShowDuration": 1200, "backgroundColor": "#05060f", "showSpinner": false }
+  },
+  "android": { "backgroundColor": "#05060f" },
+  "ios": { "backgroundColor": "#05060f", "contentInset": "always" }
+}

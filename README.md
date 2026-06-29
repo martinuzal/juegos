@@ -12,8 +12,9 @@ Cada carpeta es un proyecto **autónomo**: su propio juego, su `ads.js`, su
 | 🔷 **Neon Zigzag** | [`neon-zigzag/`](neon-zigzag/) | Sigue la pista en zigzag sin caerte | 1 toque (cambia dirección) | Cyan / magenta |
 | 🟧 **Stack Tower** | [`stack-tower/`](stack-tower/) | Apila bloques con timing perfecto | 1 toque (soltar) | Naranja / rosa |
 | 🟩 **Merge 2048** | [`merge-2048/`](merge-2048/) | Une números iguales hasta 2048 | Swipe / flechas | Verde / teal |
+| 🪐 **Orbit** | [`orbit/`](orbit/) | Salta de órbita en órbita con gravedad real | 1 toque (soltar) | Espacio / cian-violeta |
 
-Los tres comparten la misma base técnica: **HTML5 Canvas + JavaScript puro**
+Todos comparten la misma base técnica: **HTML5 Canvas + JavaScript puro**
 (sin dependencias), con "juice" para enganchar (partículas, screen-shake,
 sonido sintetizado, récords guardados) y los mismos hooks de monetización
 (intersticial al perder + recompensado para "continuar").

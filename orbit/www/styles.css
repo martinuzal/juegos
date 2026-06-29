@@ -1,0 +1,60 @@
+:root {
+  --bg0: #05060f;
+  --accent: #5cf0ff;
+  --accent2: #c46bff;
+  --good: #ffd66b;
+  --text: #eaf4ff;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bot: env(safe-area-inset-bottom, 0px);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body {
+  width: 100%; height: 100%; overflow: hidden; background: var(--bg0); color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  user-select: none; -webkit-user-select: none; touch-action: none; overscroll-behavior: none;
+}
+#app { position: fixed; inset: 0; }
+#game { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+
+.hud {
+  position: absolute; top: 0; left: 0; right: 0; padding-top: calc(var(--safe-top) + 18px);
+  display: flex; justify-content: center; pointer-events: none; z-index: 5;
+}
+.score-wrap { text-align: center; }
+.score { font-size: 60px; font-weight: 800; letter-spacing: -2px;
+  text-shadow: 0 0 20px rgba(92,240,255,.55), 0 4px 14px rgba(0,0,0,.5); line-height: 1; }
+.combo { margin-top: 4px; font-size: 22px; font-weight: 800; color: var(--accent2);
+  text-shadow: 0 0 14px rgba(196,107,255,.85); }
+
+.overlay {
+  position: absolute; inset: 0; z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px;
+  background: radial-gradient(120% 90% at 50% 12%, rgba(40,30,90,.32), rgba(5,6,15,.9) 70%); backdrop-filter: blur(2px); animation: fade .25s ease;
+}
+@keyframes fade { from { opacity: 0 } to { opacity: 1 } }
+.panel { width: 100%; max-width: 380px; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; }
+.logo { font-size: 78px; font-weight: 900; letter-spacing: -3px; line-height: .9;
+  background: linear-gradient(180deg, #fff, var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 0 26px rgba(92,240,255,.5)); }
+.logo span { background: linear-gradient(180deg, var(--accent2), #e3a8ff); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 0 26px rgba(196,107,255,.55)); }
+.tagline { opacity: .82; font-size: 15px; max-width: 290px; margin-bottom: 6px; }
+.go-title { font-size: 26px; font-weight: 900; letter-spacing: 1px; color: var(--accent2); text-shadow: 0 0 22px rgba(196,107,255,.5); }
+.go-score-label { font-size: 13px; letter-spacing: 3px; opacity: .6; text-transform: uppercase; }
+.go-score { font-size: 72px; font-weight: 900; line-height: 1; text-shadow: 0 0 22px rgba(92,240,255,.5); }
+.new-best { font-size: 16px; font-weight: 800; color: var(--good); letter-spacing: 1px; text-shadow: 0 0 14px rgba(255,214,107,.7); animation: pulse .8s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.08)} }
+.best-row { font-size: 15px; opacity: .7; } .best-row span { font-weight: 800; opacity: 1; }
+
+.btn { width: 100%; max-width: 300px; padding: 16px 22px; border: none; border-radius: 16px; font-size: 18px; font-weight: 800; letter-spacing: .5px; cursor: pointer; transition: transform .08s ease, filter .15s ease; }
+.btn:active { transform: scale(.96); }
+.btn-primary { color: #04121f; background: linear-gradient(135deg, var(--accent), #9af6ff); box-shadow: 0 8px 26px rgba(92,240,255,.32), inset 0 1px 0 rgba(255,255,255,.4); }
+.btn-reward { color: #1a0014; background: linear-gradient(135deg, #ffd34d, #ffb01f); box-shadow: 0 8px 26px rgba(255,176,31,.38), inset 0 1px 0 rgba(255,255,255,.5); }
+.reward-ico { font-size: 14px; }
+.btn-ghost { background: transparent; color: var(--text); opacity: .65; box-shadow: inset 0 0 0 2px rgba(234,244,255,.18); }
+.btn-primary, .btn-reward, .btn-ghost { margin-top: 2px; }
+.btn-icon { margin-top: 10px; width: 52px; height: 52px; border-radius: 50%; border: none; font-size: 22px; cursor: pointer; background: rgba(255,255,255,.08); box-shadow: inset 0 0 0 1px rgba(255,255,255,.12); }
+
+.hint-tap { position: absolute; bottom: calc(var(--safe-bot) + 26px); left: 0; right: 0; text-align: center; font-size: 13px; opacity: .45; letter-spacing: 2px; animation: blink 1.6s ease-in-out infinite; }
+@keyframes blink { 0%,100%{opacity:.25} 50%{opacity:.6} }
+.tap-to-start { position: absolute; left: 0; right: 0; bottom: 24%; text-align: center; font-size: 17px; font-weight: 800; letter-spacing: 2px; opacity: .85; z-index: 6; pointer-events: none; animation: blink 1.4s ease-in-out infinite; }
+.hidden { display: none !important; }
